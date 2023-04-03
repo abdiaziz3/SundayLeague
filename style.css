@@ -5,38 +5,50 @@
     /* border: 5px solid black; */
 }
 
+body {
+    background-color: #1B244A;
+    color: white;
+    font-family: Verdana;
+    font-weight: 700;
+}
+
 .scoreboard {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
     margin: 40px 0;
-    border: 5px solid black;
+    border: 5px solid white;
     border-bottom-left-radius: 70px;
     border-bottom-right-radius: 70px;
+    height: 100px;
+    background-color: #E5E5E5;
+    color: black;
+    text-shadow: 2px 4px 0px #1B244A;
 }
 
 .home {
     width: 25vw;
     border-bottom-left-radius: 20px;
-    
+    font-size: 50px;
 }
 
 .timer {
-    width: 30%;
-    border: 5px solid black;
-    font-size: 10vh;
+    width: 200px;
+    border: 5px solid white ;
+    font-size: 50px;
 }
 
 .half {
     padding: 20px 0;
+    color: white;
 }
 
 .away {
     width: 25vw;
     border-bottom-right-radius: 20px;
-
+    font-size: 50px;
 }
 
 .score {
@@ -48,9 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40vw;
-    height: 50vh;
-    font-size: 30vw;
+    font-size: 200px;
 }
 
 .increment-btn {
@@ -60,5 +70,7 @@
 
 .plus-one {
     padding: 20px;
-    font-size: 10vh;
+    font-size: 50px;
+    border: 2px solid white;
+
 }
