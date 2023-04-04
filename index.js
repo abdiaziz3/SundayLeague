@@ -1,5 +1,6 @@
 let timerText = document.getElementById("timer")
 let startGame = document.getElementById("start-game")
+let stopGame = document.getElementById("stop-game")
 
 let scoreBtn1 = document.getElementById("point-action-home")
 let scoreBtn2 = document.getElementById("point-action-away")
@@ -19,6 +20,10 @@ startGame.addEventListener("click", () => {
         timerText.textContent = minutes + ":"+ extraSeconds
     }, 1000);
 })
+
+
+
+
 
 
 let count = 0
