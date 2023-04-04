@@ -31,7 +31,7 @@ body {
 }
 
 .timer {
-    border: 5px solid white ;
+    border: 5px solid #1B244A ;
     font-size: 2vw;
 }
 
@@ -51,6 +51,7 @@ body {
 .score {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .score > p {
@@ -60,9 +61,17 @@ body {
     font-size: 15vw;
 }
 
-.start-game {
-    height: 10vh;
-    width: 10vh;
+.game-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-control > button {
+    margin: 10px 0;
+    /* height: 10vh;
+    width: 10vh; */
+    font-size: 3vh;
+
 }
 
 .increment-btn {
