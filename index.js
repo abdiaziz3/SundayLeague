@@ -68,16 +68,15 @@ function getFormData () {
     let playerNumber = document.getElementById("player-input").value
     let playerAction = document.getElementById("player-action").value
 
-
-    console.log(player =
+    let player =
         {
             "player" : {
                 "number" : playerNumber, 
                 "action" : playerAction
             }
-        })
+        }
 
-        matchStats.innerHTML = player[1]
-}
+    const player2 = player.player
+    matchStats.innerHTML += "The player " +  Object.values(player2)[0] + " has recieved a " +  Object.values(player2)[1] + '<br>'
 
-console.log(getFormData())
+}   

@@ -88,6 +88,21 @@ body {
     box-shadow: 0px 0px 5px whitesmoke;
 }
 
+/* match stats  */
+.match-stats {
+    margin: 20px 20px;
+    color: #1B244A;
+    border-radius: 50px;
+}
+
+.match-stats > h2{
+    margin: 20px 20px;
+    color: #1B244A;
+    text-decoration: underline;
+    border-radius: 20px;
+}
+
+
 /* Player action modal */
 
 .modal-bg {
