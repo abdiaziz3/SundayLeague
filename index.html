@@ -36,16 +36,19 @@
         </div>
     </div>
     <div class="modal-bg">
-        <div class="modal">
+
+        <div class="modal action">
             <h2>Add actions on player</h2>
             <label for="number">Player</label>
-            <input type="text" name="player-number">
+            <input class="action" type="text" name="player-number" placeholder="Name / Number">
             <label for="card">Red, Yellow or Warning</label>
-            <select name="card" id="cars">
+            <select class="action" name="card" id="cars">
+                <option value="warning" selected disabled hidden>Select an option</option>
                 <option value="warning">Warning</option>
                 <option value="yellow">Yellow</option>
                 <option value="red">Red</option>
               </select>
+            <button class="action">Submit</button>
 
         </div>
             

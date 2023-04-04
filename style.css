@@ -71,3 +71,34 @@ body {
     border: 5px solid black;
     background-color: #E5E5E5;
 }
+
+/* Player action modal */
+
+.modal-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #00000080;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: #1B244A;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+.modal > label {
+    margin: 20px 0;
+}
+
+.modal > select {
+    margin: 20px;
+}
