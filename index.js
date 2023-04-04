@@ -1,6 +1,7 @@
 let timerText = document.getElementById("timer")
-let scorebtn1 = document.getElementById("score1")
-let scorebtn2 = document.getElementById("score2")
+let scoreBtn1 = document.getElementById("point-action-home")
+let scoreBtn2 = document.getElementById("point-action-away")
+let score1 = document.getElementById("score1")
 
 function secondsCalc () { 
     let seconds = 0
@@ -19,6 +20,15 @@ function secondsCalc () {
 
 secondsCalc()
 
-function btnIncrement () {
-    add
-}
+let count = 0
+let count2 = 0
+
+scoreBtn1.addEventListener("click", () =>{
+    count += 1
+    score1.innerHTML = count
+});
+
+scoreBtn2.addEventListener("click", () => {
+    count += 1
+    score2.innerHTML = count 
+});

@@ -65,9 +65,9 @@ body {
     justify-content: space-around;
 }
 
-.plus-one {
+.action {
     padding: 20px;
-    font-size: 5vw;
+    font-size: 2vw;
     border: 5px solid black;
     background-color: #E5E5E5;
 }
