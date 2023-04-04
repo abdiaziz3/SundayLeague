@@ -1,13 +1,24 @@
-let time = 0
-let timerText = document.getElementById("timer").innerHTML
-const start = new Date().getTime();
+let timerText = document.getElementById("timer")
+let scorebtn1 = document.getElementById("score1")
+let scorebtn2 = document.getElementById("score2")
 
-function timeCalc (start) { 
-    var days = Math.floor(start / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((start % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((start % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((start % (1000 * 60)) / 1000);
-    return days + hours + minutes + seconds
+function secondsCalc () { 
+    let seconds = 0
+    timer = setInterval(() => {
+        // timerText.innerHTML = 0 + seconds;
+        seconds ++;
+        // console.log(timerText.innerHTML)
+        let minutes = Math.floor(seconds / 60);
+        let extraSeconds = seconds % 60;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        extraSeconds = extraSeconds < 10 ? "0" + extraSeconds : extraSeconds;
+        // console.log(minutes + "" + extraSeconds)
+        timerText.textContent = minutes + ":"+ extraSeconds
+    }, 1000);
 }
 
-console.log(timeCalc(start))
+secondsCalc()
+
+function btnIncrement () {
+    add
+}
