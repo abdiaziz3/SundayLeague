@@ -3,7 +3,7 @@ let scoreBtn1 = document.getElementById("point-action-home")
 let scoreBtn2 = document.getElementById("point-action-away")
 let score1 = document.getElementById("score1")
 
-function secondsCalc () { 
+addEventListener.on () { 
     let seconds = 0
     timer = setInterval(() => {
         // timerText.innerHTML = 0 + seconds;
